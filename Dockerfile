@@ -11,7 +11,7 @@ RUN pip install uv
 COPY pyproject.toml requirements.txt uv.lock* ./
 
 # Install dependencies
-RUN uv pip sync --no-cache
+RUN uv pip sync --no-cache requirements.txt
 
 # Copy the rest of the application code
 COPY db/ ./db/
