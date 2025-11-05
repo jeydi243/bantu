@@ -5,7 +5,8 @@ FROM python:3.13-slim
 WORKDIR /app
 
 # Install uv
-RUN pip install uv --system
+# RUN pip install uv
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Copy the dependency files
 COPY pyproject.toml requirements.txt uv.lock* ./
