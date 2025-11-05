@@ -3,4 +3,5 @@ python-dotenv
 requests
 urllib3
 SQLAlchemy
+idna
 psycopg2-binary

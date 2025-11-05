@@ -14,5 +14,6 @@ dependencies = [
     "requests",
     "SQLAlchemy",
     "psycopg2-binary",
-    "urllib3"
+    "urllib3",
+    "idna"
 ]
