@@ -1,0 +1,14 @@
+# Git
+.git
+.gitignore
+
+# Virtualenv
+.venv
+venv
+
+# Python cache
+__pycache__
+*.pyc
+
+# VSCode
+.vscode
