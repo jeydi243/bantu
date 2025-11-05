@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.13-alpine3.22
+FROM python:3.14-alpine3.22
 
 # Set the working directory in the container
 WORKDIR /app
@@ -12,7 +12,8 @@ RUN pip install uv
 COPY pyproject.toml requirements.txt uv.lock* ./
 
 # Install dependencies
-RUN uv pip sync --no-cache requirements.txt --system
+# RUN uv pip sync --no-cache requirements.txt --system
+RUN uv pip install -r requirements.txt --system
 
 # Copy the rest of the application code
 COPY db/ ./db/
