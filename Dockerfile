@@ -5,7 +5,7 @@ FROM python:3.13-slim
 WORKDIR /app
 
 # Install uv
-RUN pip install uv
+RUN pip install uv --system
 
 # Copy the dependency files
 COPY pyproject.toml requirements.txt uv.lock* ./
