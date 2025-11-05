@@ -4,4 +4,5 @@ requests
 urllib3
 SQLAlchemy
 idna
+certifi
 psycopg2-binary
